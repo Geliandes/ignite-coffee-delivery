@@ -42,18 +42,35 @@ export const AddressFormContainer = styled.div`
   @media(max-width: 1200px){
     grid-template-columns: 1fr 1fr;
 
-  .cep {
-    grid-column: span 2;
-    max-width: unset
+    .cep {
+      grid-column: span 2;
+      max-width: 10px;
+    }
+
+    .street {
+      grid-column: span 2;
+    }
+
+    .complement {
+      grid-column: span 1;
+    }
   }
 
-  .street {
-    grid-column: span 2;
-  }
+  @media(max-width: 620px){
+    grid-template-columns: 1fr;
 
-  .complement {
-    grid-column: span 1;
-  }
+    .cep {
+      grid-column: span 1;
+      max-width: unset;
+    }
+
+    .street {
+      grid-column: span 1;
+    }
+
+    .complement {
+      grid-column: span 1;
+    }
   }
 `
 
@@ -61,4 +78,9 @@ export const PaymentMethodsContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 0.875rem;
+
+  @media(max-width: 1200px){
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
 `
