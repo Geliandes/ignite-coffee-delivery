@@ -10,6 +10,8 @@ interface CartContextType {
   cartItems: CartItem[];
   cartQuantity: number;
   cartItemsTotal: number;
+  popupCartAction: boolean;
+  setPopupCart: (action: boolean) => void;
   addCoffeeToCart: (coffee: CartItem) => void;
   changeCartItemQuantity: (cartItemId: number, type: 'increase' | 'decrease') => void;
   removeCartItem: (cartItemId: number) => void;
@@ -34,6 +36,8 @@ export function CartContextProvider({ children }: CartContextProviderProps) {
       return [];
     }
   });
+
+  const [popupCartAction, setPopupCartAction] = useState(false);
 
   const cartQuantity = cartItems.length;
 
@@ -87,6 +91,10 @@ export function CartContextProvider({ children }: CartContextProviderProps) {
     setCartItems([]);
   }
 
+  function setPopupCart(action:boolean) {
+    setPopupCartAction(action);
+  }
+
   useEffect(() => {
     localStorage.setItem(COFFEE_ITEMS_STORAGE_KEY, JSON.stringify(cartItems))
   }, [cartItems])
@@ -99,7 +107,9 @@ export function CartContextProvider({ children }: CartContextProviderProps) {
       changeCartItemQuantity, 
       removeCartItem,
       cartItemsTotal,
-      cleanCart
+      cleanCart,
+      popupCartAction,
+      setPopupCart
     }}>
       {children}
     </CartContext.Provider>
