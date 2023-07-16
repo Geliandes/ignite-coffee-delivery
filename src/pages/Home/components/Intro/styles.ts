@@ -52,7 +52,7 @@ export const IntroTitle = styled(TitleText)`
 
   @media(max-width: 620px) {
     font-size: 1.7rem;
-    text-align: start;
+    text-align: center;
   }
 `
 export const BenefitsContainer = styled.div`
@@ -65,5 +65,6 @@ export const BenefitsContainer = styled.div`
   @media(max-width: 620px) {
     column-gap: 1.25rem;
     margin-top: 2rem;
+    padding-bottom: 2rem;
   }
 `

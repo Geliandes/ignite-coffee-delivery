@@ -2,6 +2,12 @@ import { styled } from "styled-components";
 
 export const OurCoffeesContainer = styled.section`
   margin-top: 2rem;
+
+  @media(max-width: 1200px) { 
+    h1{
+      font-size: 1.7rem;
+    }
+}
 `
 
 export const CoffeeList = styled.div`
