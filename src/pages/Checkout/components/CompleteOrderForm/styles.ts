@@ -44,7 +44,7 @@ export const AddressFormContainer = styled.div`
 
     .cep {
       grid-column: span 2;
-      max-width: 10px;
+      max-width: unset;
     }
 
     .street {
