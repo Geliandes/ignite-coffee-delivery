@@ -33,12 +33,16 @@ export const IntroContent = styled.div`
   @media (max-width: 1200px) {
     flex-wrap: wrap;
     flex-direction: column-reverse;
-
+    gap: 1.5rem;
   }
 
   @media (max-width: 620px) {
     img{
       width: 80vw;
+    }
+
+    h3 {
+      font-size: 1rem;
     }
   }
 `
@@ -47,8 +51,8 @@ export const IntroTitle = styled(TitleText)`
   margin-bottom: 1rem;
 
   @media(max-width: 620px) {
-    font-size: 2.5rem;
-    text-align: center;
+    font-size: 1.7rem;
+    text-align: start;
   }
 `
 export const BenefitsContainer = styled.div`
@@ -60,5 +64,6 @@ export const BenefitsContainer = styled.div`
 
   @media(max-width: 620px) {
     column-gap: 1.25rem;
+    margin-top: 2rem;
   }
 `
