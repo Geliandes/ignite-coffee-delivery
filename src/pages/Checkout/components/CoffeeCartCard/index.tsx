@@ -5,8 +5,6 @@ import { ActionsContainer, CoffeCartCardContainer, RemoveButton } from "./styles
 import { CartItem } from "../../../../context/CartContext";
 import { formatMoney } from "../../../../utils/formatMoney";
 import { useCart } from "../../../../hooks/useCart";
-import { useState, useEffect } from "react";
-import { PopupCartAction } from "../../../../components/PopupCartAction";
 
 interface CoffeeCartCardProps {
   coffee: CartItem;
