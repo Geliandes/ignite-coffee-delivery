@@ -51,7 +51,7 @@ export function Header() {
 
   return (
     <HeaderContainer>
-      <div className="container">
+      <div className="container container-header">
         <NavLink to="/">
           <img src={logoCoffee} alt="Coffee Delivery" />
         </NavLink>

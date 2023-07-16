@@ -1,5 +1,4 @@
 import { PaymentMethodsContainer } from "./styles";
-
 import { PaymentMethodInput } from "../PaymentMethodInput";
 import { useFormContext } from "react-hook-form";
 import { RegularText } from "../../../../components/Typography";

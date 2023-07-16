@@ -1,5 +1,4 @@
 /* eslint-disable @typescript-eslint/no-misused-promises */
-
 import { SelectedCoffees } from "./components/SelectedCoffees";
 import { CompleteOrderForm } from "./components/CompleteOrderForm";
 import { CheckoutContainer } from "./styles";

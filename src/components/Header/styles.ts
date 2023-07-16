@@ -15,6 +15,10 @@ export const HeaderContainer = styled.header`
     justify-content: space-between;
     align-items: center;
   }
+
+  .container-header{
+    width: 100% !important;
+  }
 `;
 
 export const HeaderButtonsContainer = styled.div`

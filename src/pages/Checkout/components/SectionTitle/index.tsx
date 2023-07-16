@@ -2,7 +2,6 @@ import { IconWithInfo } from "./styles";
 import { RegularText } from "../../../../components/Typography";
 import { ReactNode } from "react";
 
-
 interface SectionTitleProps {
   icon: ReactNode,
   title: string,

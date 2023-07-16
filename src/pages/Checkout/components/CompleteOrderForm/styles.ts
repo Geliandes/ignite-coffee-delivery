@@ -6,11 +6,16 @@ export const CompleteOrderFormContainer = styled.div`
   flex-direction: column;
   gap: 0.75rem;
   width: 40rem;
+
+  @media(max-width: 1200px){
+    width: 100%;
+  }
 `
 export const FormSectionContainer= styled(SectionBaseStyle)`
   display: flex;
   flex-direction: column;
   gap: 2rem;
+
 `
 
 export const AddressFormContainer = styled.div`
@@ -32,6 +37,23 @@ export const AddressFormContainer = styled.div`
 
   .complement {
     grid-column: span 2;
+  }
+
+  @media(max-width: 1200px){
+    grid-template-columns: 1fr 1fr;
+
+  .cep {
+    grid-column: span 2;
+    max-width: unset
+  }
+
+  .street {
+    grid-column: span 2;
+  }
+
+  .complement {
+    grid-column: span 1;
+  }
   }
 `
 
