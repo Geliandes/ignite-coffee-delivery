@@ -24,6 +24,16 @@ margin-bottom: 1.5rem;
     font-weight: 700;
     align-self: flex-start
   }
+
+  @media(max-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+
+    > p {
+      margin-top: 0.5rem;
+      align-self: flex-end;
+    }
+  }
 `
 
 export const ActionsContainer = styled.div`
