@@ -45,8 +45,6 @@ export function Header() {
         console.log(error);
       });
     }
-
-    console.log('rodou')
   }, [address])
 
   return (
